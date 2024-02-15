@@ -1,5 +1,5 @@
 npm i
-gulp
+gulp(каждый раз при запуске программы)
   /если не запускается
   npm un gulp
   npm i -g gulp
