@@ -42,7 +42,7 @@ const sliders = (slides, dir, prev, next) => {
 			items[slideIndex - 1].classList.remove('slideInRight');
 			items[slideIndex - 1].classList.add('slideInLeft');
 		})
-	} catch (e) { }
+	} catch (e) {}
 
 	function activateAnimation() {
 		if (dir === 'vertical') {
@@ -67,7 +67,6 @@ const sliders = (slides, dir, prev, next) => {
 	items[0].parentNode.addEventListener('mouseleave', () => {
 		activateAnimation();
 	});
-
 
 };
 
