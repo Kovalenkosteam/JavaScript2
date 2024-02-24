@@ -16,10 +16,10 @@ const showMoreStyles = (trigger, wrapper) => {
 	// });
 
 	btn.addEventListener('click', function() {
-		getResource('http://localhost:3000/styles')
-		// getResource('assets/db.json')
-		// 	.then(res => createCarts(res.styles))
-			.then(res => createCarts(res))
+		// getResource('http://localhost:3000/styles') //при запуске json сервера
+		getResource('assets/db.json')
+			.then(res => createCarts(res.styles))
+			// .then(res => createCarts(res)) //при запуске json сервера
 			.catch(error=>console.log(error));
 		this.remove();
 	});
