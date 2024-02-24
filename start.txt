@@ -13,3 +13,6 @@ gulp(каждый раз при запуске программы)
 Shift+F5 сброс кэша
 
 gulp build-prod-js /финальный бил продакш
+
+npm install json-server -g
+json-server src/assets/db.json
